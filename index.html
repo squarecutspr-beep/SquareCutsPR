@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Square Cuts Studio</title>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E✂️%3C/text%3E%3C/svg%3E">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main class="card">
+    <header>
+      <img src="Images/logo.jpg" alt="Banner de la barbería" class="banner-img"/>
+    </header>
+
+    <section class="card-body">
+      <img src="Images/gerente.jpg" alt="Foto de perfil del barbero" class="profile-img"/>
+      <p class="subtitle">Barbería Familiar</p>
+      <p class="description">Un lugar clásico y moderno, donde el estilo, la familia y la tradición se encuentran.</p>
+
+      <div class="button-group">
+        <button class="btn" data-modal-target="#modalServicios">
+          <i class="fas fa-scissors fa-fw"></i> Servicios
+        </button>
+        <a href="tel:+17873808168" class="btn">
+          <i class="fas fa-phone fa-fw"></i> Llamar
+        </a>
+
+        <a href="https://wa.me/+17873808168?text=Hola,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener noreferrer" class="btn">
+          <i class="fab fa-whatsapp fa-fw"></i> WhatsApp
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=100078274118442" target="_blank" rel="noopener noreferrer" class="btn">
+          <i class="fab fa-facebook-f fa-fw"></i> Facebook
+      </a>
+
+      <a href="https://www.instagram.com/_squarecutstudio_/" target="_blank" rel="noopener noreferrer" class="btn">
+         <i class="fab fa-instagram fa-fw"></i> Instagram
+      </a>
+
+      <a href="https://maps.app.goo.gl/1phcdWjKwqDPRXm39?g_st=iw" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="btn">
+        <i class="fas fa-map-marker-alt fa-fw"></i> Cómo llegar
+      </a>
+
+     <div class="actions-group">
+        <button class="btn btn-secondary" id="shareButton">
+          <i class="fas fa-share-alt fa-fw"></i> Compartir
+        </button>
+
+
+        <a href="contacto.vcf" class="btn btn-secondary">
+          <i class="fas fa-user-plus fa-fw"></i> Guardar Contacto
+        </a>
+      </div>
+      
+    </section>
+
+    <footer class="card-footer">
+      <p>© 2025 newtronPlus Studio</p>
+    </footer>
+  </main>
+
+  <div id="modalServicios" class="modal">
+    <div class="modal-content">
+      <button class="close-button" data-modal-close aria-label="Cerrar ventana">&times;</button>
+      <h2>Nuestros Servicios</h2>
+      <ul class="service-list">
+        <li>
+          <h3>Corte de Cabello</h3>
+          <p>Estilos clásicos y modernos para toda la familia.</p>
+        </li>
+        <li>
+          <h3>Arreglo de Barba</h3>
+          <p>Recorte y perfilado.</p>
+        </li>
+        <li>
+          <h3>Atención Familiar</h3>
+          <p>Un espacio cómodo y confiable para todos.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+ 
+  <script src="scripts.js"></script>
+</body>
+</html>
